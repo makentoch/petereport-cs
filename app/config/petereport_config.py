@@ -36,16 +36,16 @@ PETEREPORT_TEMPLATES = {
 	'report_pdf_pages_background': "title.png", # title.png, blank.png - location: app/preport/templates/tpl/pdf/
 	'report_jupyter_name': 'PEN-JUPYTER',
 	'initial_text': 'TBC',
-	'titlepage-color': "e6e2e2",
-	'titlepage-text-color': "000000",
-	'titlepage-rule-color': "cc0000",
+	'titlepage-color': "e6e2e2", # gray
+	'titlepage-text-color': "000000", # black
+	'titlepage-rule-color': "09AC34", # red; change to green; Color #09AC34 (Red:9;Green:172;Blue:52)
 	'titlepage-rule-height': 2
 }
 
 PETEREPORT_MARKDOWN = {
-	'author': 'Pentest company',
+	'author': 'by Critical Security',
 	'subject': 'Pentest Report',
-	'website': 'https://github.com/1modm/petereport',
+	'website': 'https://critical.lt',
 	'martor_upload_method': 'BASE64', # BASE64 (stored in DB) or MEDIA (path not protected, must be set 'debug': True. This is highly insecure and not encouraged for production use. Should be configured the web server (apache, nginx, etc) to serve the media content using a protected link) 
 	'media_host': 'http://127.0.0.1:8000' # If docker deployment, set https://<HOST IP>, else for django deployment http://<HOST IP>:8000 
 }
